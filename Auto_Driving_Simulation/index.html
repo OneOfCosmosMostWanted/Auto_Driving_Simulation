@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Self-driving</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Pop-up container -->
+  <div class="popup-container" id="popup">
+    <p>Which algorithm would you like to use?</p>
+    <button id="geneticBtn">Genetic</button>
+    <button id="eliticBtn">Elitism </button>
+  </div>
+  <div class="topnav">
+    <a class="active" href="index.html">ANN</a>
+    <a href="drawingTrack.html">DQL</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <div>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+      <button id="myButton">🏁</button>
+      <button onclick="save()">💾</button>
+      <button onclick="discard()">🗑️</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+  </div>
+  <script src="visualizer.js"></script>
+  <script src="network.js"></script>
+  <script src="sensor.js"></script>
+  <script src="utils.js"></script>
+  <script src="road.js"></script>
+  <script src="controls.js"></script>
+  <script src="car.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+  <script src="genetic_algorithms.js"></script>
+</body>
+
+</html>
